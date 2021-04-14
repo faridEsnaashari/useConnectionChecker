@@ -1,0 +1,24 @@
+{
+  "name": "useconnectionchecker",
+  "version": "1.0.0",
+  "description": "this hook retruns a state which has true as default value. whenever internet connection lost, this state value, changed to false.",
+  "main": "useConnectionChecker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faridEsnaashari/useConnectionChecker.git"
+  },
+  "keywords": [
+    "react",
+    "internet connection",
+    "javascript"
+  ],
+  "author": "faridEsnaashari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faridEsnaashari/useConnectionChecker/issues"
+  },
+  "homepage": "https://github.com/faridEsnaashari/useConnectionChecker#readme"
+}
