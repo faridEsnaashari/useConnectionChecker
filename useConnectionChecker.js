@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const useSocketReConnector = (checkTimeInterval, checkTimeOut, url = window.location.origin.toString()) => {
+const useSocketReConnector = (checkTimeInterval = 10000, checkTimeOut = 20000, url = window.location.origin.toString()) => {
     const [ connection, setConnection ] = useState(true);
 
     async function* checkConnection(){
