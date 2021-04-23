@@ -5,16 +5,16 @@ whenever internet connection lost, this state value, changed to false.
 
 # How to use:
 
-1- this hook uses **axios** to send request to check connection. so first, you need to install it:
+1- First need to install it from npm:
 
 ```
-npm install axios
+npm install useconnectionchecker
 ```
 
-2- import the hook in ever component you need and call it with the needed [arguments](https://github.com/faridEsnaashari/useConnectionChecker#arguments). then use the returned state of it to know the connection status.
+2- Then import it to your project and call it with the needed [arguments](https://github.com/faridEsnaashari/useConnectionChecker#arguments). then use the returned state of it to know the connection status.
 
 ```javascript
-import useConnectionChecker from "./hooks/useConnectionChecker";
+import useConnectionChecker from "useconnectionchecker";
 
 const App = () => {
     const url = window.location.origin.toString();
@@ -23,11 +23,6 @@ const App = () => {
     const checkAgainTime = 20000;
 
     const connection = useConnectionChecker(checkTimePeriod, checkAgainTime, url);
-
-    useEffect(() => {
-            const networkError = new Error("Connection Error");
-            throw networkError;
-    }, [connection]);
 
     return(
         <>
