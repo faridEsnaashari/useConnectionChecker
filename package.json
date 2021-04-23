@@ -1,6 +1,6 @@
 {
   "name": "useconnectionchecker",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "this hook retruns a state which has true as default value. whenever internet connection lost, this state value, changed to false.",
   "main": "useConnectionChecker.js",
   "scripts": {
